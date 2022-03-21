@@ -6928,9 +6928,9 @@ git-write-pkt-line@0.1.0:
     bops "0.0.3"
     through "~2.2.7"
 
-"github@git://github.com/mikedeboer/node-github#ca90bf27d5820812c3b76908189d666446ed97cd":
+"github@https://github.com/mikedeboer/node-github#ca90bf27d5820812c3b76908189d666446ed97cd":
   version "0.2.3"
-  resolved "git://github.com/mikedeboer/node-github#ca90bf27d5820812c3b76908189d666446ed97cd"
+  resolved "https://github.com/mikedeboer/node-github#ca90bf27d5820812c3b76908189d666446ed97cd"
   dependencies:
     mime "^1.2.11"
 
