@@ -34,10 +34,12 @@ export default Component.extend(Growable, {
     if (this.isDestroyed) {
       return;
     }
-    if (on) {
-      this.element.classList.add('liquid-animating');
-    } else {
-      this.element.classList.remove('liquid-animating');
+    if (this.element) {
+      if (on) {
+        this.element.classList.add('liquid-animating');
+      } else {
+        this.element.classList.remove('liquid-animating');
+      }
     }
   },
 
@@ -134,8 +136,10 @@ function goAbsolute(version, size) {
 function goStatic(version) {
   if (version.view && !version.view.isDestroyed) {
     let elt = version.view.element;
-    elt.style.width = '';
-    elt.style.height = '';
-    elt.style.position = '';
+    if (elt) {
+      elt.style.width = '';
+      elt.style.height = '';
+      elt.style.position = '';
+    }
   }
 }
